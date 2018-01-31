@@ -1,0 +1,187 @@
+$color-basic: rgb(33, 13, 12)
+$color-basic-light: rgb(103, 83, 82)
+$color-paper: rgb(241, 240, 235)
+
+@mixin break-line()
+	position: relative
+
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		left: 50%
+		bottom: 0
+		width: 70px
+		margin-left: -35px
+		border-bottom: 1px solid $color-basic
+
+@font-face
+	font-family: 'OldeEnglish'
+	src: url('./OldeEnglish.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	color: $color-basic
+	font-size: 16px
+	font-family: 'Old Standard TT', serif;
+
+a
+	color: inherit
+
+	&:hover
+		color: #bb0000
+
+.root
+	display: flex
+	flex-wrap: wrap
+	width: 1280px
+	margin: 10px auto
+	padding: 0 40px
+	background-color: $color-paper
+
+	> article
+		width: 200px
+		margin-top: 2px
+		border-right: 1px solid $color-basic
+
+		> header
+			padding: 14px 0
+			font-size: 18px
+			font-weight: bold
+			text-align: center
+			text-transform: uppercase
+			@include break-line()
+
+			> small
+				color: $color-basic-light
+				font-size: 12px
+
+		> ul
+			margin: 0
+			padding: 6px 5px 6px 28px
+			@include break-line()
+
+			> li
+				margin: 8px 0
+
+		> .block
+			border: 1px solid $color-basic
+			margin: 16px 4px
+			padding: 4px
+
+			> header
+				margin: 4px 0
+				font-size: 14px
+				font-weight: bold
+				text-transform: uppercase
+				text-align: center
+
+			> section
+				font-size: 14px
+
+	.header
+		width: 100%
+		padding: 10px 0
+		border-right: none
+		font-family: OldeEnglish, sans-serif
+		font-size: 64px
+		text-align: center
+
+	.date
+		display: flex
+		width: 100%
+		border-top: 4px double $color-basic
+		border-bottom: 4px double $color-basic
+		border-right: none
+		text-transform: uppercase
+		padding: 6px 0 2px 0 
+		font-size: 11px
+		font-weight: bold
+		word-spacing: 6px
+
+		> .left
+			width: 33%
+			text-indent: 10px
+
+		> .center
+			width: 34%
+			text-align: center
+
+		> .right
+			width: 33%
+
+	.me
+		display: flex
+		flex-wrap: wrap
+		align-content: flex-start
+		width: 600px
+		margin-top: 2px
+
+		> header
+			width: 100%
+
+		> section
+			background-image: url('./wanted.png')
+			background-size: 100% 100%
+			border: 1px solid $color-basic
+			width: 200px
+			height: 280px
+
+		> ul
+			width: 399px
+			margin: 8px 0 0 0
+			padding: 0
+
+			&:before
+				display: none
+
+			> li
+				display: flex
+				padding: 0
+				list-style: none
+
+				> span
+					display: inline-block
+					width: 140px
+					margin: 0 10px 0 0
+					text-align: right
+
+				> strong
+					display: inline-block
+					width: 200px
+					font-weight: 400
+
+	.examples
+		border-right: none
+
+	.copyright
+		display: flex
+		border-right: none
+		border-top: 4px double $color-basic
+		width: 100%
+		padding: 15px 10px 30px 10px
+		font-size: 14px
+
+		> .left
+			width: 50%
+
+		> .right
+			width: 50%
+			text-align: right
+
+@media screen and (max-width: 1280px)
+	body
+		background-color: $color-paper
+
+	.root
+		width: 680px
+		margin: 0 auto
+		padding: 0 40px
+
+		.me
+			border-right: none
