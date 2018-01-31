@@ -1,6 +1,4 @@
 /******/ (function(modules) { // webpackBootstrap
-<<<<<<< HEAD
-=======
 /******/ 	function hotDisposeChunk(chunkId) {
 /******/ 		delete installedChunks[chunkId];
 /******/ 	}
@@ -657,7 +655,6 @@
 /******/ 		});
 /******/ 	}
 /******/
->>>>>>> Add binaries
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -672,13 +669,6 @@
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
-<<<<<<< HEAD
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-=======
 /******/ 			exports: {},
 /******/ 			hot: hotCreateModule(moduleId),
 /******/ 			parents: (hotCurrentParentsTemp = hotCurrentParents, hotCurrentParents = [], hotCurrentParentsTemp),
@@ -687,7 +677,6 @@
 /******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, hotCreateRequire(moduleId));
->>>>>>> Add binaries
 /******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
@@ -729,77 +718,6 @@
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
-<<<<<<< HEAD
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_sass__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_sass__);
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(2);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(4)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {
-	module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js??ref--0-2!./index.sass", function() {
-		var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js??ref--0-2!./index.sass");
-
-		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-
-		var locals = (function(a, b) {
-			var key, idx = 0;
-
-			for(key in a) {
-				if(!b || a[key] !== b[key]) return false;
-				idx++;
-			}
-
-			for(key in b) idx--;
-
-			return idx === 0;
-		}(content.locals, newContent.locals));
-
-		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
-
-		update(newContent);
-	});
-
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-=======
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
@@ -814,27 +732,18 @@ exports = module.exports = __webpack_require__(3)(false);
 
 var escape = __webpack_require__("./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
->>>>>>> Add binaries
 // imports
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, "body {\n  background-color: black;\n  color: white; }\n", ""]);
-=======
 exports.push([module.i, "@font-face {\n  font-family: 'OldeEnglish';\n  src: url(" + escape(__webpack_require__("./src/OldeEnglish.ttf")) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal; }\n\n* {\n  box-sizing: border-box; }\n\nbody {\n  margin: 0;\n  color: #210d0c;\n  font-size: 16px;\n  font-family: 'Old Standard TT', serif; }\n\na {\n  color: inherit; }\n  a:hover {\n    color: #bb0000; }\n\n.root {\n  display: flex;\n  flex-wrap: wrap;\n  width: 1280px;\n  margin: 10px auto;\n  padding: 0 40px;\n  background-color: #f1f0eb; }\n  .root > article {\n    width: 200px;\n    margin-top: 2px;\n    border-right: 1px solid #210d0c; }\n    .root > article > header {\n      padding: 14px 0;\n      font-size: 18px;\n      font-weight: bold;\n      text-align: center;\n      text-transform: uppercase;\n      position: relative; }\n      .root > article > header:before {\n        content: \"\";\n        display: block;\n        position: absolute;\n        left: 50%;\n        bottom: 0;\n        width: 70px;\n        margin-left: -35px;\n        border-bottom: 1px solid #210d0c; }\n      .root > article > header > small {\n        color: #675352;\n        font-size: 12px; }\n    .root > article > ul {\n      margin: 0;\n      padding: 6px 5px 6px 28px;\n      position: relative; }\n      .root > article > ul:before {\n        content: \"\";\n        display: block;\n        position: absolute;\n        left: 50%;\n        bottom: 0;\n        width: 70px;\n        margin-left: -35px;\n        border-bottom: 1px solid #210d0c; }\n      .root > article > ul > li {\n        margin: 8px 0; }\n    .root > article > .block {\n      border: 1px solid #210d0c;\n      margin: 16px 4px;\n      padding: 4px; }\n      .root > article > .block > header {\n        margin: 4px 0;\n        font-size: 14px;\n        font-weight: bold;\n        text-transform: uppercase;\n        text-align: center; }\n      .root > article > .block > section {\n        font-size: 14px; }\n  .root .header {\n    width: 100%;\n    padding: 10px 0;\n    border-right: none;\n    font-family: OldeEnglish, sans-serif;\n    font-size: 64px;\n    text-align: center; }\n  .root .date {\n    display: flex;\n    width: 100%;\n    border-top: 4px double #210d0c;\n    border-bottom: 4px double #210d0c;\n    border-right: none;\n    text-transform: uppercase;\n    padding: 6px 0 2px 0;\n    font-size: 11px;\n    font-weight: bold;\n    word-spacing: 6px; }\n    .root .date > .left {\n      width: 33%;\n      text-indent: 10px; }\n    .root .date > .center {\n      width: 34%;\n      text-align: center; }\n    .root .date > .right {\n      width: 33%; }\n  .root .me {\n    display: flex;\n    flex-wrap: wrap;\n    align-content: flex-start;\n    width: 600px;\n    margin-top: 2px; }\n    .root .me > header {\n      width: 100%; }\n    .root .me > section {\n      background-image: url(" + escape(__webpack_require__("./src/wanted.png")) + ");\n      background-size: 100% 100%;\n      border: 1px solid #210d0c;\n      width: 200px;\n      height: 280px; }\n    .root .me > ul {\n      width: 399px;\n      margin: 8px 0 0 0;\n      padding: 0; }\n      .root .me > ul:before {\n        display: none; }\n      .root .me > ul > li {\n        display: flex;\n        padding: 0;\n        list-style: none; }\n        .root .me > ul > li > span {\n          display: inline-block;\n          width: 140px;\n          margin: 0 10px 0 0;\n          text-align: right; }\n        .root .me > ul > li > strong {\n          display: inline-block;\n          width: 200px;\n          font-weight: 400; }\n  .root .examples {\n    border-right: none; }\n  .root .copyright {\n    display: flex;\n    border-right: none;\n    border-top: 4px double #210d0c;\n    width: 100%;\n    padding: 15px 10px 30px 10px;\n    font-size: 14px; }\n    .root .copyright > .left {\n      width: 50%; }\n    .root .copyright > .right {\n      width: 50%;\n      text-align: right; }\n\n@media screen and (max-width: 1280px) {\n  body {\n    background-color: #f1f0eb; }\n  .root {\n    width: 680px;\n    margin: 0 auto;\n    padding: 0 40px; }\n    .root .me {\n      border-right: none; } }\n", ""]);
->>>>>>> Add binaries
 
 // exports
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 3 */
-=======
 
 /***/ "./node_modules/css-loader/lib/css-base.js":
->>>>>>> Add binaries
 /***/ (function(module, exports) {
 
 /*
@@ -916,9 +825,6 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 4 */
-=======
 
 /***/ "./node_modules/css-loader/lib/url/escape.js":
 /***/ (function(module, exports) {
@@ -944,7 +850,6 @@ module.exports = function escape(url) {
 /***/ }),
 
 /***/ "./node_modules/style-loader/lib/addStyles.js":
->>>>>>> Add binaries
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1010,11 +915,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-<<<<<<< HEAD
-var	fixUrls = __webpack_require__(5);
-=======
 var	fixUrls = __webpack_require__("./node_modules/style-loader/lib/urls.js");
->>>>>>> Add binaries
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1330,12 +1231,8 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 5 */
-=======
 
 /***/ "./node_modules/style-loader/lib/urls.js":
->>>>>>> Add binaries
 /***/ (function(module, exports) {
 
 
@@ -1429,10 +1326,6 @@ module.exports = function (css) {
 };
 
 
-<<<<<<< HEAD
-/***/ })
-/******/ ]);
-=======
 /***/ }),
 
 /***/ "./src/OldeEnglish.ttf":
@@ -1516,4 +1409,3 @@ module.exports = __webpack_require__.p + "33954508193e358da4fdc57760632029.png";
 /***/ })
 
 /******/ });
->>>>>>> Add binaries
