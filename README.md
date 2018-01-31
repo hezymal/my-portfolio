@@ -1,4 +1,4 @@
 My portfolio
 ===
 
-url: 
+url: https://hezymal.github.io/my-portfolio/bin/index.html
