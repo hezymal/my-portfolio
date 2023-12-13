@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/my-portfolio/static/js/main.b70f8e1e.js",
+    "static/js/787.2dcca737.chunk.js": "/my-portfolio/static/js/787.2dcca737.chunk.js",
+    "index.html": "/my-portfolio/index.html",
+    "main.b70f8e1e.js.map": "/my-portfolio/static/js/main.b70f8e1e.js.map",
+    "787.2dcca737.chunk.js.map": "/my-portfolio/static/js/787.2dcca737.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b70f8e1e.js"
+  ]
+}
