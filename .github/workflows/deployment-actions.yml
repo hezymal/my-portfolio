@@ -25,6 +25,7 @@ jobs:
                 run: |
                     git config --global user.name $user_name
                     git config --global user.email $user_email
+                    echo https://${github_token}@github.com/${repository}
                     git remote set-url origin https://${github_token}@github.com/${repository}
                     yarn deploy
                 env:
